@@ -1,0 +1,620 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><script language="JavaScript1.2">
+    if (window.Event)
+        document.captureEvents(Event.MOUSEUP);
+
+    function nocontextmenu() {
+        event.cancelBubble = true, event.returnValue = false;
+
+        return false;
+    }
+
+    function norightclick(e) {
+        if (window.Event) {
+            if (e.which == 2 || e.which == 3) return false;
+        } else if (event.button == 2 || event.button == 3) {
+            event.cancelBubble = true, event.returnValue = false;
+            return false;
+        }
+    }
+
+    if (document.layers)
+        document.captureEvents(Event.MOUSEDOWN);
+
+    document.oncontextmenu = nocontextmenu;
+    document.onmousedown = norightclick;
+    document.onmouseup = norightclick;
+</script>
+
+    <script>
+        const __config = {
+            preload: {
+                minTime: 0.5,
+                maxTime: 5,
+                withOnload: true,
+                timeInterval: 0.5,
+            },
+            timer: {
+                dd: [
+                    ["Day", "Days", "Days"],
+                    ["Hour", "Hours", "Hours"],
+                    ["Minute", "Minutes", "Minutes"],
+                    ["Second", "Seconds", "Seconds"],
+                ],
+            },
+            sectionSwitcher: {
+                init: true,
+                speed: 0.5,
+                easeType: "power1.out",
+            },
+            sliders: {
+                news: {
+                    init: true,
+                    loop: false,
+                    autoplay: false,
+                    autoplayDelay: 7000,
+                },
+                streams: {
+                    init: true,
+                    autoplay: false,
+                    autoplayDelay: 10000,
+                },
+            },
+        };
+    </script>
+
+
+    <style>
+        .preload {
+            background-color: rgb(13, 5, 2);
+            min-width: 320px;
+            position: fixed;
+            z-index: 500;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+    </style>
+   
+    <title>Interlude & Gracia Final - Ready To Fight</title>
+<meta name="description" content="Ready To Fight - Lineage 2 complex server">
+<meta name="keywords" content="l2, la2, Interlude, interlude, gracia final, gracia epilogue, freya, classic, thebattle, l2name, averia, freewars, e-global, emerland, scryde, asterios, shock-world, eternal, beyond, euro-pvp, ketrawars, helios, rpg-club, lionna, l2dragon, l2mad, thewide, mas9, gorezonez, vonpts, new server, new server l2, new pvp server l2, new pvp server la2, l2, la2, new pvp servers l2, new pvp server l2, new server l2, pvp craft server, pts build, adrenaline bot, l2 quests, new server announcements, server Interlude, gracia final, nodonat">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="Interlude x10.000 Lineage 2 ">
+<meta property="og:description" content="Ready To Fight - Lineage 2 complex server">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="images/info.jpg">
+
+<meta name="twitter:title" content="Ready To Fight - Lineage 2 complex server">
+<meta name="twitter:description" content="L2 Interlude | New Interlude Server | Interlude Launch Today | Top L2 Servers | Gracia Final server">
+<meta name="twitter:image" content="images/info.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gwi.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+   
+</head>
+
+<body class="body">
+
+
+<div class="preload">
+    <div class="preload__progress" data-preload-progress=""></div>
+    <img src="images/logoo.png" alt="loading.." class="preload__logo" style="width: 16rem">
+    <div class="preload__items">
+        <div class="preload__item"></div>
+        <div class="preload__item"></div>
+        <div class="preload__item"></div>
+    </div>
+</div>
+
+<a href="javascript:;" data-open-window="modal-promobonus" data-menu-close="" class="bottomframe pulse-grow" style="cursor: pointer;">
+    <img border="0" class="pulse-grow" style="max-width:300px" title="Summer Start Bonus" alt="Summer Start Bonus" src="images/bonus.webp">
+</a>
+
+<ul class="points" data-points="">
+    <li class="point__devider point__devider_pos_start"></li>
+    <li class="point point_active" data-point-name="hero">
+        <div class="point__dot">
+            <div class="point__line"></div>
+        </div>
+        <div class="point__content">
+            <div class="point__title">Почніть гру</div>
+            <div class="point__desc">Головна сторінка</div>
+        </div>
+    </li>
+    
+    <li class="point__devider"></li>
+    <li class="point" data-point-name="aboutus">
+        <div class="point__dot">
+            <div class="point__line"></div>
+        </div>
+        <div class="point__content">
+            <div class="point__title">Про сервер</div>
+            <div class="point__desc">Інформація</div>
+        </div>
+    </li>
+    <li class="point__devider point__devider_pos_end"></li>
+</ul>
+
+
+<div class="section compensate-for-scrollbar" data-section="navigation">
+    <div class="container" data-container="navigation">
+        <div class="navigation">
+            <div class="navigation__box navigation__box_side_left">
+                <a href="#" class="logo">
+                    <img src="images/logoo.png" alt="logo" class="logo__img" style="width: 8rem">
+                    <img src="images/logoo.png" style="width: 8rem" alt="logo" class="logo__img logo__img_hover">
+                </a>
+
+            </div>
+
+            <div class="navigation__menu menu" data-menu="">
+                <div class="menu__content">
+                    <ul class="menu__list">
+                        <li class="menu__el">
+                            <a href="/" class="menu__item"> Головний </a>
+                        </li>
+                        <li class="menu__dot"></li>
+                        <li class="menu__el">
+                            <a href="#infoss" class="menu__item">  Опис</a>
+                        </li>
+                        <li class="menu__dot"></li>
+                        <li class="menu__el">
+                            <a href="javascript:;" data-open-window="modal-downloads" data-menu-close="" class="menu__item">
+                                Файл                            </a>
+                        </li>
+                        
+                        
+                        <li class="menu__el menu__el_continer menu__el_continer_divider"></li>
+                        <li class="menu__el menu__el_continer" data-place-from="auth"></li>
+                        <li class="menu__el menu__el_continer">
+                            <div class="scl_type_mobile" data-place-from="scl"></div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="navigation__box navigation__box_side_right">
+                
+                <div class="navigation__lang" data-place-from="lang">
+                    <div class="lang" data-place-container="lang">
+                        <div class="lang__current">
+                            <img src="images/uk.webp" alt="UK" class="lang__img lang__current-img">
+                            <div class="lang__name">UK</div>
+                        </div>
+                        <div class="lang__list">
+                                                            <a href="/ru" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/ru.webp" alt="ru" class="lang__img">
+                                    <div class="lang__name">RU</div>
+                                </a>
+                                                            <a href="/" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/en.webp" alt="en" class="lang__img">
+                                    <div class="lang__name">EN</div>
+                                </a>
+                                        
+                                                       <a href="/" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/uk.webp" alt="uk" class="lang__img">
+                                    <div class="lang__name">UK</div>
+                                </a>
+                                
+                            
+                                             <a href="/jp" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/jp.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">JP</div>
+                                </a>
+                            
+                                      <a href="/cn" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/cn.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">CN</div>
+                                </a>
+                            
+                            
+                                      <a href="/kr" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/kr.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">KR</div>
+                                </a>
+                            
+                             <a href="/br" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/br.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">BR</div>
+                                </a>
+                            
+                            <a href="/ph" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/ph.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">PH</div>
+                                </a>
+                            
+                            <a href="/id" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/id.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">ID</div>
+                                </a>
+                            
+                            <a href="/pl" class="lang__link lang__link_sub notranslate" data-google-lang="ru">
+                                    <img src="images/pl.svg" alt="uk" class="lang__img">
+                                    <div class="lang__name">PL</div>
+                                </a>
+                                                    </div>
+                    </div>
+                </div>
+                
+                <div class="navigation__auth" data-place-to="auth">
+                    <div class="auth" data-place-container="auth">
+                        <a href="javascript:;" data-open-window="modal-downloads" class="btn">  Реєстрація</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation__gw-burger gw-burger" data-gw-burger="">
+                <div class="gw-burger__box">
+                    <div class="gw-burger__line gw-burger__line_pos_top"></div>
+                    <div class="gw-burger__line gw-burger__line_pos_middle"></div>
+                    <div class="gw-burger__line gw-burger__line_pos_bottom"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="page">
+    <header class="section" data-section="hero" data-target-section="hero">
+        <div class="container" data-container="hero">
+            <div class="hero" data-gw-anime="fadeInDown" data-gw-anime-delay=".2s" data-gw-anime-duration=".8s">
+                <div class="hero__box">
+                    <div class="hero__logotype" style="width: 100%;height: 100%;max-width: 460px;max-height: 220px">
+                        <a href="#" class="logotype">
+                            <img src="images/logoo.png" style="
+                         width: 100%;
+                         height:100%;
+                         max-width: 460px;
+                         max-height: 220px" alt="logotype" class="logotype__img">
+                            <img src="images/logoo.png" style="
+                         width: 100%;
+                         height:100%;
+                         max-width: 460px;
+                         max-height: 220px" alt="logotype" class="logotype__img logotype__img_hover_animation">
+                        </a>
+
+                    </div>
+                                            <h1 class="hero__title">Ласкаво просимо!</h1>
+                        <div class="hero__subtitle">
+                            <p>Приєднуйтесь до нас, і разом ми зробимо чудову гру.</p>
+                            
+                            
+                        </div>
+                                        <div class="hero__btns">
+                        <a href="javascript:;" data-open-window="modal-downloads" class="btn btn_size_large">
+                            Почніть гру                       </a>
+                    </div>
+                    <div class="hero__countdownbox countdownbox" data-countdown-start-time="2025-08-22 20:00:00" data-countdown-before="New Interlude Server" data-countdown-after="Life time" data-countdown-time-zone="Europe/Moscow">
+                        <div class="countdown">
+                            <div class="countdown__heading">
+                                <div class="countdown__title">Coming soon</div>
+                            </div>
+                            <div class="countdown__counter">
+                                <div class="countdown__item">
+                                    <div class="countdown__amount"></div>
+                                    <div class="countdown__desc">
+                                        Days
+                                    </div>
+                                </div>
+                                <div class="countdown__devider"></div>
+                                <div class="countdown__item">
+                                    <div class="countdown__amount">
+                                    </div>
+                                    <div class="countdown__desc">
+                                        Hour
+                                    </div>
+                                </div>
+                                <div class="countdown__devider"></div>
+                                <div class="countdown__item">
+                                    <div class="countdown__amount">
+                                    </div>
+                                    <div class="countdown__desc">
+                                        Minutes
+                                    </div>
+                                </div>
+                                <div class="countdown__devider"></div>
+                                <div class="countdown__item">
+                                    <div class="countdown__amount">
+                                    </div>
+                                    <div class="countdown__desc">
+                                        Seconds
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="servers-desktop">
+    <div id="gf" class="server" data-gw-server-online-max="200" data-gw-server-online="380" data-server-status="on">
+        <div class="server__status"></div>
+        <div class="server__online-text"> Gracia Final загальний Online:</div>
+        <div class="server__count">
+            <span class="server__count-hide">0</span>
+            <span class="server__count-visible" data-gw-server-count=""></span>
+        </div>
+    </div>
+
+    <div id="int" class="server" data-gw-server-online-max="200" data-gw-server-online="280" data-server-status="on">
+        <div class="server__status"></div>
+        <div class="server__online-text"> Interlude загальний Online:</div>
+        <div class="server__count">
+            <span class="server__count-hide">0</span>
+            <span class="server__count-visible" data-gw-server-count=""></span>
+        </div>
+    </div>
+            
+    <div id="totalsrv" class="server" data-gw-server-online-max="200" data-gw-server-online="280" data-server-status="on">
+        <div class="server__status"></div>
+        <div class="server__online-text"> Загальний Online:</div>
+        <div class="server__count">
+            <span class="server__count-hide">0</span>
+            <span class="server__count-visible" data-gw-server-count=""></span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Функция для получения данных с API
+    async function fetchServerData() {
+        try {
+            const response = await fetch('https://api-online.readytofight.ru/rtfall');
+            const data = await response.json();
+
+            // Обновление значений в HTML
+            document.querySelector('#gf').setAttribute('data-gw-server-online', data.gracia);
+            document.querySelector('#int').setAttribute('data-gw-server-online', data.interlude);
+            document.querySelector('#totalsrv').setAttribute('data-gw-server-online', data.total);
+
+
+            // Обновление видимых значений
+            document.querySelector('#gf .server__count-visible').textContent = data.gracia;
+            document.querySelector('#int .server__count-visible').textContent = data.interlude;
+            document.querySelector('#totalsrv .server__count-visible').textContent = data.total;
+
+            
+           
+        } catch (error) {
+            console.error('Ошибка при получении данных:', error);
+        }
+    }
+
+    // Вызов функции для получения данных
+    fetchServerData();
+</script>
+
+    </header>
+
+
+
+    <section id="infoss" class="section" data-section="aboutus" data-target-section="aboutus" data-news-slider-section="">
+        <div class="decline decline_pos_top"></div>
+        <div class="container" data-container="aboutus">
+            <div class="aboutus" data-gw-anime="fadeInDown" data-gw-anime-delay=".2s" data-gw-anime-duration=".8s">
+                <div class="news__heading heading">
+                    <div class="news__subtitle subtitle">Information</div>
+                    <div class="news__title title">Про проект </div>
+                </div>
+                                    <div class="aboutus__container">
+                        <a href="images/nJ8H8DBA2pkWQjCaUBxKeXCwusJWaywmYu5yZr6d174880957917488761661748876270174887648117488765321748879631.webp" data-fancybox="" class="aboutus__madia">
+                            <img src="images/nJ8H8DBA2pkWQjCaUBxKeXCwusJWaywmYu5yZr6d174880957917488761661748876270174887648117488765321748879631.webp" alt="img" class="aboutus__img aboutus__img_right">
+                        </a>
+                        <div class="aboutus__content">
+                            <h3 data-start="82" data-end="103">Ласкаво просимо! Ми комплекс ігрових серверів!</h3>
+<h4 data-start="105" data-end="128">Хроніки та клієнт</h4>
+<p data-start="129" data-end="411">Ми працюємо на платформі <strong data-start="154" data-end="167">Interlude і Gracia Final</strong>, але це далеко не класика в сучасному розумінні.<br data-start="217" data-end="220">Вас чекає <strong data-start="229" data-end="277">стабільний клієнт і насичений контент</strong>, ми відмовилися від доповнень і зробили унікальні сервера на будь-який смак.<br data-start="321" data-end="324"><strong data-start="324" data-end="345">Стабільні сервера</strong>, повна відсутність доната, увага до деталей не дадуть вам занудьгувати.</p>
+<hr data-start="413" data-end="416">
+<p data-start="433" data-end="558">Ми виступаємо<strong data-start="446" data-end="496">проти покупних КП і кланів</strong>.<br data-start="497" data-end="500">У нас  <strong data-start="508" data-end="557">тільки справжні гравці, відсутність доната і чесна конкуренція</strong>.</p>
+<p data-start="560" data-end="839">Адміністрація <strong data-start="574" data-end="607">ніколи не торгувала "в тіні"</strong> і не планує цього робити.<br data-start="636" data-end="639">Ми відкриті до діалогу, активно працюємо з спільнотою і з повагою ставимося до кожного гравця.<br data-start="733" data-end="736">Сервера <strong data-start="743" data-end="785">регулярно просуваються на топ-ресурсах</strong></p>
+<p data-start="841" data-end="940">
+              <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіоплеєр.
+    </audio>              
+                            
+                            </p>
+                            
+                         
+                            
+                            
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+
+    <footer class="section" data-section="footer" data-gw-anime="fadeIn" data-gw-anime-delay=".2s" data-gw-anime-duration=".6s">
+        <div class="container" data-container="footer">
+            <div class="footer">
+                <div class="footer__copyright">2025 © ReadyToFight</div>
+                <div class="footer__desc">
+                                    </div>
+                <div class="footer__links">
+                    
+                </div>
+            </div>
+
+            <div style="display: flex;flex-wrap: wrap;justify-content: center;align-items: center;gap: 5px;margin-bottom: 10px;">
+
+                                                </div>
+        </div>
+    </footer>
+
+
+</div>
+
+
+<div class="bg"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const box = document.querySelector('.hero__countdownbox');
+        if (!box) return;
+
+        const startTime = new Date(box.dataset.countdownStartTime.replace(' ', 'T'));
+        const beforeText = box.dataset.countdownBefore || '';
+        const afterText = box.dataset.countdownAfter || '';
+        const tz = box.dataset.countdownTimeZone || 'UTC';
+        const title = box.querySelector('.countdown__title');
+        const amounts = box.querySelectorAll('.countdown__amount');
+
+        function updateCountdown() {
+            const now = new Date(new Date().toLocaleString('en-US', { timeZone: tz }));
+            let diff = startTime - now;
+
+            if (diff > 0) {
+                title.textContent = beforeText;
+            } else {
+                title.textContent = afterText;
+                diff = Math.abs(diff);
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            diff -= days * (1000 * 60 * 60 * 24);
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            diff -= hours * (1000 * 60 * 60);
+            const minutes = Math.floor(diff / (1000 * 60));
+            diff -= minutes * (1000 * 60);
+            const seconds = Math.floor(diff / 1000);
+
+            amounts[0].textContent = String(days).padStart(2, '0');
+            amounts[1].textContent = String(hours).padStart(2, '0');
+            amounts[2].textContent = String(minutes).padStart(2, '0');
+            amounts[3].textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    });
+</script>
+
+
+<div style="display: none">
+    <div class="mdl mdl_animated" id="modal-downloads">
+        <div class="mdl__inner">
+            <div class="mdl__close" data-fancybox-close=""></div>
+            <div class="mdl__body downloads">
+                <div class="mdl__heading heading">
+                    <div class="mdl__subtitle subtitle subtitle_size_small">
+                        Для гри на наших серверах оберіть хроніки<br>                    </div>
+                    <h2 class="mdl__title title title_size_small">Файли для Interlude</h2>
+                </div>
+                                    <div class="downloads__list">
+                                                    <div class="downloads__box">
+                                <div class="downloads__title">Файли для Interlude</div>
+                                <div class="downloads__btns">
+                 
+                                                 <a style="display: flex;align-items: center;gap: 5px" href="patch/InterludePatch.zip" class="downloads__button button" target="_blank">
+                                                   
+                                                    <span>Завантажити з сайту</span>
+                                                </a>
+                                         </div>
+                            </div>
+                                                    <div class="downloads__box">
+                                <div class="downloads__title">Клієнт Interlude</div>
+                                <div class="downloads__btns">
+                                                       
+                                                         <a style="display: flex;align-items: center;gap: 5px" href="https://drive.google.com/file/d/1exnggidr_0e-jyfDrGuTWGiEDKF_foE9/view" class="downloads__button button" target="_blank">
+                                                    
+                                                    <span>Завантажити з Google</span>
+                                                </a>
+                                                 </div>
+                            </div>
+                                            </div><br>
+                                    <h2 class="mdl__title title title_size_small"><center>Файли для Gracia Final  </center></h2>
+
+                
+                <div class="downloads__list">
+                                                    <div class="downloads__box">
+                                <div class="downloads__title">Патч для Gracia Final</div>
+                                <div class="downloads__btns">
+                 
+                                                 <a style="display: flex;align-items: center;gap: 5px" href="patch/GraciaFinalPatch.zip" class="downloads__button button" target="_blank">
+                                                    <span>Завантажити з сайту</span>
+                                                </a>
+                                    
+                                    
+                                         </div>
+                            </div>
+                                                    <div class="downloads__box">
+                                <div class="downloads__title">Клієнт Gracia Final</div>
+                                <div class="downloads__btns">
+                                                   
+                                                         <a style="display: flex;align-items: center;gap: 5px" href="https://drive.google.com/file/d/18lFLaPRu8jM2sSpkMxCgyGH0nD1W4wxT/view?usp=sharing" class="downloads__button button" target="_blank">
+                                                    
+                                                    <span>Завантажити з Google</span>
+                                                </a>
+                                    
+                                                 </div>
+                            </div>
+                                            </div>
+                
+                
+                
+                
+                                <br>
+                <div class="mdl__heading heading">
+                    <div class="mdl__subtitle subtitle subtitle_size_small">
+                        Для регістрціі в грі, вам треба вибрати ігровий клієнт                   </div>
+                    <h2 class="mdl__title title title_size_small">На сервері встановлена автореєстрація</h2>
+                </div>
+              <center> Реєстрація аккаунта проходить в самій грі. Ви повинні запустити ігровий клієнт, ввести бажаний логін і пароль, якщо Логін не зайнятий, ви потрапите до списку серверів. Уважно вибирайте сервер, якщо ви граєте з Interlude клієнта, то вам потрібні сервера з префіксом Interlude, якщо з Gracia Final то з префіксом Gracia Final і так далі.</center> 
+				<hr>
+				<div style="text-align: center">
+					<p><strong>Всі файли запаковані в .zip архів</strong> </p>
+                    <p><strong>Клієнти Gracia Final і Interlude вже налаштовані під наші сервера</strong> </p>
+                    <p><strong>Якщо у Вас вже є ігровий клієнт Gracia Final або Interlude, то скачайте наш патч</strong> </p>
+					<p> Бажаємо вам приємної гри на нашому проекті</p>
+					
+				</div>
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body></html>
